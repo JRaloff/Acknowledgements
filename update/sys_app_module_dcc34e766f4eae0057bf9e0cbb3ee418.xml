@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Acknowledgements">90c34e766f4eae0057bf9e0cbb3ee418</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Acknowledgements</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_mmsi_acknowledge_acknowledgements</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>itil</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2016-09-27 18:36:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>dcc34e766f4eae0057bf9e0cbb3ee418</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Acknowledgements</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Acknowledgements" source="x_mmsi_acknowledge">c96206766f4eae0057bf9e0cbb3ee447</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Acknowledgements">c96206766f4eae0057bf9e0cbb3ee447</sys_scope>
+        <sys_update_name>sys_app_module_dcc34e766f4eae0057bf9e0cbb3ee418</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2016-10-08 19:39:35</sys_updated_on>
+        <timeline_page/>
+        <title>Acknowledgements</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

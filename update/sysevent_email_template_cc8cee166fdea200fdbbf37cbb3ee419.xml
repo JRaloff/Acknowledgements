@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_mmsi_acknowledge_acknowledgements</collection>
+        <message/>
+        <message_html><![CDATA[<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4" face="arial,helvetica,sans-serif"><span style="font-family: arial, helvetica, sans-serif;"><img src="https://commscope.service-now.com/CS Notification Logo_v2.pngx" alt="" width="371" height="110" /></span></font></div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4" face="arial,helvetica,sans-serif"><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></font></div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4"><span style="font-family: arial, helvetica, sans-serif;">This is a request to obtain your acknowledgement:</span></font></div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<div><font size="4">&nbsp;</font></div>
+<div><font size="4"><span style="font-family: arial, helvetica, sans-serif;"><strong>Number:&nbsp; </strong>${URI_REF}<strong> <br /></strong></span></font></div>
+<div><font size="4"><span style="font-family: arial, helvetica, sans-serif;"><strong>Short Description:</strong> ${short_description}<strong><br /></strong></span></font></div>
+<div><font size="4"><span style="font-family: arial, helvetica, sans-serif;"><strong>Description:</strong> ${description}<br /></span></font></div>
+<div>&nbsp;</div>
+<div><font size="4"><span style="font-family: arial, helvetica, sans-serif;"><strong>Acknowledgers</strong>: ${acknowledgers}<br /></span></font></div>
+<div><font size="4">&nbsp;</font></div>
+</div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4"><span style="font-family: arial, helvetica, sans-serif;">${mail_script:add_acknowledgment_reference}&nbsp;</span></font>&nbsp;</div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4"><span style="font-family: arial, helvetica, sans-serif;">${mail_script:one_click_acknowledgement_links}</span></font></div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<div><hr style="cursor: default;" /></div>
+</div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font size="4"><span style="font-family: arial, helvetica, sans-serif;">Click here to view the Acknowledgement<strong>:</strong> <strong>${URI}</strong></span></font></div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">&nbsp;</div>
+<div style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+<div style="font-size: 11px;"><font size="4" face="arial,helvetica,sans-serif">&nbsp;</font></div>
+<div style="font-size: 11px;">
+<div><hr /></div>
+</div>
+<div style="font-size: 11px;"><font size="4" face="arial,helvetica,sans-serif"><strong>CommScope IT Service Desk</strong></font></div>
+<div style="font-size: 11px;"><font size="4" face="arial,helvetica,sans-serif"><strong>Internal:</strong> 54200 &bull; <strong>Toll-free:</strong> 866.895.4847 &bull; <strong>International:</strong> (+1) 828.323.4200 &bull; <strong>E-mail:</strong> helpdesk@commscope.com</font></div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Acknowledgement Template</name>
+        <sms_alternate/>
+        <subject>Please review and acknowledge ${number} - ${Description}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2016-10-08 18:44:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc8cee166fdea200fdbbf37cbb3ee419</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Acknowledgement Template</sys_name>
+        <sys_package display_value="Acknowledgements" source="x_mmsi_acknowledge">c96206766f4eae0057bf9e0cbb3ee447</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Acknowledgements">c96206766f4eae0057bf9e0cbb3ee447</sys_scope>
+        <sys_update_name>sysevent_email_template_cc8cee166fdea200fdbbf37cbb3ee419</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2016-10-26 14:23:58</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

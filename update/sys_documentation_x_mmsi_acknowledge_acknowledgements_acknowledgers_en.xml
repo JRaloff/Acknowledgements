@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="acknowledgers" label="Acknowledgers" language="en" table="x_mmsi_acknowledge_acknowledgements">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>acknowledgers</element>
+            <help/>
+            <hint/>
+            <label>Acknowledgers</label>
+            <language>en</language>
+            <name>x_mmsi_acknowledge_acknowledgements</name>
+            <plural>Acknowledgers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jraloff_admin</sys_created_by>
+            <sys_created_on>2016-10-25 20:55:23</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>de20b67f6faa2200fdbbf37cbb3ee4f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Acknowledgers</sys_name>
+            <sys_package display_value="Acknowledgements" source="x_mmsi_acknowledge">c96206766f4eae0057bf9e0cbb3ee447</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Acknowledgements">c96206766f4eae0057bf9e0cbb3ee447</sys_scope>
+            <sys_update_name>sys_documentation_x_mmsi_acknowledge_acknowledgements_acknowledgers_en</sys_update_name>
+            <sys_updated_by>jraloff_admin</sys_updated_by>
+            <sys_updated_on>2016-10-25 20:55:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

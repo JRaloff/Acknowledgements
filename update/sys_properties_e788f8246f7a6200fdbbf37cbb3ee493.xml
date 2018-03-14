@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Flag to Send Daily reminders for pending acknowledgements&#13;
+If false, only the first reminder will go out id the daily reminder value is not 0.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_mmsi_acknowledge.SendDailyMessagesAfterFirstReminder</name>
+        <read_roles/>
+        <suffix>SendDailyMessagesAfterFirstReminder</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2016-10-27 20:10:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e788f8246f7a6200fdbbf37cbb3ee493</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_mmsi_acknowledge.SendDailyMessagesAfterFirstReminder</sys_name>
+        <sys_package display_value="Acknowledgements" source="x_mmsi_acknowledge">c96206766f4eae0057bf9e0cbb3ee447</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Acknowledgements">c96206766f4eae0057bf9e0cbb3ee447</sys_scope>
+        <sys_update_name>sys_properties_e788f8246f7a6200fdbbf37cbb3ee493</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2016-10-27 20:10:05</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e788f8246f7a6200fdbbf37cbb3ee493"/>
+</record_update>

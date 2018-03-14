@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Acknowledgements" max_length="40" name="x_mmsi_acknowledge_acknowledgements" type="collection">
+        <element label="Acknowledged/Rejected" max_length="40" name="acknowledged_rejected" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Acknowledgers" mandatory="true" max_length="4000" name="acknowledgers" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="Can Reject" max_length="40" name="can_reject" type="boolean"/>
+        <element label="Description" max_length="65536" name="description" type="html"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element dependent="referenced_table" dependent_on_field="referenced_table" label="Record" max_length="32" name="record" type="document_id" use_dependent_field="true"/>
+        <element label="Referenced Table" max_length="40" name="referenced_table" type="string"/>
+        <element label="Requested" max_length="40" name="requested" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Responder" max_length="32" name="responder" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Short Description" max_length="255" name="short_description" type="string"/>
+        <element choice="1" default="not_requested" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="Not Yet Requested" sequence="10" value="not_requested"/>
+                <element label="Requested" sequence="20" value="requested"/>
+                <element label="Acknowledged" sequence="30" value="acknowledged"/>
+                <element label="No Longer Required" sequence="40" value="no_longer_required"/>
+                <element label="Rejected" sequence="50" value="rejected"/>
+                <element label="Cancelled" sequence="60" value="cancelled"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="record"/>
+        </index>
+        <index name="index2">
+            <element name="responder"/>
+        </index>
+    </element>
+</database>

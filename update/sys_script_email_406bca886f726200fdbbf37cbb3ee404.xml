@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>add_acknowledgment_reference</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[runmail();
+
+function runmail() {
+	// Add your code here
+	//template.print('starting add_acknowledgment_reference');
+	
+	var record = current.record.toString();
+	//template.print('add_acknowledgment_reference record:' + record);
+	if (record!="") {
+		//template.print('add_acknowledgment_reference found record');
+		
+		var short_des=current.short_description;
+		
+		var cat_item1 = new GlideRecord(current.referenced_table);
+		cat_item1.addQuery("sys_id", current.record);
+		cat_item1.query();
+		
+		if(cat_item1.next()) {
+			//template.print('add_acknowledgment_reference record opened');
+
+			//var description= current.description;
+			var bstring="";
+			
+			var taskid = current.record;
+			var classname = current.referenced_table;
+			var number = "";
+			
+			if(cat_item1.number) {
+				number=cat_item1.number;
+			}
+			else if(cat_item1.u_number) {
+				number=cat_item1.u_number;
+			}
+			else {
+				number = "LINK";
+			}
+			
+			var tasknumber = number ;
+			//template.print('add_acknowledgment_reference number: ' + tasknumber);
+			//template.print('add_acknowledgment_reference taskid: ' + taskid);
+			//template.print('add_acknowledgment_reference classname: ' + classname);
+			
+			//template.print('add_acknowledgment_reference short_des: ' + short_des);
+			
+			var link="";
+			link = href_link_with_nav2(classname, taskid, tasknumber);
+			
+			//template.print('add_acknowledgment_reference href: ' + link);
+			if (short_des!="") {
+				template.print('<b>Referenced Object:</b> ' + link + ' - ' + short_des + '<br/>');
+			}
+			else {
+				template.print('<b>Referenced Object:</b> ' + link + '<br/>');
+			}
+			
+			//template.print("<b>Description:</b> <br>" + cat_item1.description.replace(/\t/g,'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;').replace(/  /g,'&nbsp;&nbsp;') +"<br><br><hr/>");
+			
+		}
+		
+	}
+}
+
+
+function href_link_with_nav2(table, id, text ) {
+	
+			//	template.print('add_acknowledgment_reference table: ' + table);
+			//template.print('add_acknowledgment_reference id: ' + id);
+			//template.print('add_acknowledgment_reference text : ' + text );
+	
+	var sn_href="nav_to.do?uri=" + table + ".do?";
+	var instance = gs.getProperty("instance_name");
+	var uri = "https://" + instance + ".service-now.com/";
+	var link="";
+	
+	var sys_id_lnk = 'sys_id=' + id;
+	if (table == 'kb_view') {
+		sys_id_lnk = 'sys_kb_id=' + id;
+	}
+	
+	href_link = 'href="' + uri + sn_href + sys_id_lnk + '"';
+	var href =  "<a " + href_link + ">" + text + "</a>";
+	
+	return href;
+	
+}]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>jraloff_admin</sys_created_by>
+        <sys_created_on>2016-10-26 12:53:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>406bca886f726200fdbbf37cbb3ee404</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>add_acknowledgment_reference</sys_name>
+        <sys_package display_value="Acknowledgements" source="x_mmsi_acknowledge">c96206766f4eae0057bf9e0cbb3ee447</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Acknowledgements">c96206766f4eae0057bf9e0cbb3ee447</sys_scope>
+        <sys_update_name>sys_script_email_406bca886f726200fdbbf37cbb3ee404</sys_update_name>
+        <sys_updated_by>jraloff_admin</sys_updated_by>
+        <sys_updated_on>2016-10-26 14:22:52</sys_updated_on>
+    </sys_script_email>
+</record_update>
